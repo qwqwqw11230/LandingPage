@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  html{
+    background-color: #1F2937;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: center; 
+    color: #fff;
+    
+    padding: 20px 0;
+  }
+  
+  .menu {
+    
+  width: 1366px;
+   
+  display: flex;
+  justify-content: space-around;
+  }
+
+  .links {
+   
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu > #header{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .links > .item {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+   button{
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    
+   }
+    
+   .section1{
+    display: flex;
+    justify-content: flex-start;
+    
+   }
+
+   .hero{
+    margin-left: 173px;
+    width: 350px;
+    margin-top: 95px;
+  }
+
+  .hero > h1{
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+  }
+    .hero > p{
+    width: 500px;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 18px;
+    }
+    
+    .hero > a > button{  
+    height: 40px; 
+    width: 140px;
+    padding: 4px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 24px;
+    }
+
+  
+ 
