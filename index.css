@@ -8,11 +8,12 @@
   
 
 body {
-    background-color: #FFF;
+    background-color: #f9fbfa;
     text-align: center;
     font-family: 'Roboto';
     transition: background 0.2s linear;
 }
+
 
 
 
@@ -32,7 +33,7 @@ body {
     padding: 20px 0px 20px 100px;
     align-items: center;
     height: 90px;
-    border-bottom: 2px  solid;
+    border-bottom: 1px  solid;
     border-color: rgb(194, 193, 193);
 }
 
@@ -96,7 +97,7 @@ body {
 
 .hero-cta p {
     width: 360px;
-
+    color: #1F2937;
 }
 
 h1 {
@@ -155,10 +156,16 @@ h1 {
 
 .quote {
     
+    color: #1F2937;
+    background-color: #ffffff;
+    border-style: groove;
+    border-bottom: 1px solid rgb(215, 218, 224);
+    border-right: 1px solid rgb(215, 218, 224);
+    border-top: 1px solid rgb(215, 218, 224);
+    border-left: 1px solid rgb(215, 218, 224);
     margin: 60px 200px;
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
     border-radius: 20px;
 }
 
@@ -167,27 +174,34 @@ h1 {
     padding: 10px;
     font-style: italic;
     font-weight: lighter;
-    
+    color: #1F2937;
 }
 
 
 
 /* Sign Up Part */
 .sign-up {
-    background-color: #5d9bff ;
-    margin: 50px 200px;
     
+    background-color: white;
+    border-bottom: 1px solid rgb(215, 218, 224);
+    border-right: 1px solid rgb(215, 218, 224);
+    border-top: 1px solid rgb(215, 218, 224);
+    border-left: 1px solid rgb(215, 218, 224);
+    margin: 50px 200px;
     display: flex;
     align-items: center;
     border-radius: 20px;
+    color: #1F2937;
 }
 
 .sign-item {
     flex: 1;
+    
 }
 
 .signs-text {
     text-align: left;
+    color: #1F2937;
 }
 
 .signs-text p {
@@ -217,19 +231,50 @@ h3 {
 }
 
 .footer{
+    border-top: 1px  solid;
+    border-color: rgb(194, 193, 193);
     background-color:#E5E7EB;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
+}
+.footer p{
     color: #1F2937;
+
 }
 
-body.dark {background-color: #111827;} /* #9b59b6 */
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .hero-cta{
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  .hero{
+      flex-direction: column;
+  }
+  .quote{
+    padding: 0;
+  }
+  .sign-up{
+    flex-direction: column;
+    margin:0;
+  }
+}
+
+body.dark {background-color: #111827;} 
 
 body.dark  h1, h2, h3, p, body.dark .header-link a {color: #fff;}
 
 
-body.dark .quote, .footer, .sign-up {background-color: #1e2837;}
+body.dark .quote, .footer,.sign-up {background-color: #1e2837;}
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -263,30 +308,4 @@ body.dark .quote, .footer, .sign-up {background-color: #1e2837;}
 
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
-}
-
-
-@media (max-width: 600px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar{
-    padding: 0;
-  }
-  .hero-cta{
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-  }
-  .hero{
-      flex-direction: column;
-  }
-  .quote{
-    padding: 0;
-  }
-  .sign-up{
-    flex-direction: column;
-    margin:0;
-  }
 }
